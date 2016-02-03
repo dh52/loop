@@ -53,6 +53,7 @@ imageListC[6] = "images/watercolor/thumbs/artwork_7.jpg";
 imageListC[7] = "images/watercolor/thumbs/artwork_8.jpg";
 imageListC[8] = "images/watercolor/thumbs/artwork_9.jpg";
 
+
 //create the build thumbnail function
 function buildThumbnails()
 {
@@ -81,6 +82,7 @@ function buildThumbnails()
     //concatenation assignment
     output += '<img src="' + imageListC[k] + '" />';
   }
+
   
 thumbsDiv.innerHTML = output;
    // thumbsDiv.innerHTML = 
