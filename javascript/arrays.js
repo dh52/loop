@@ -53,6 +53,12 @@ imageListC[6] = "images/watercolor/thumbs/artwork_7.jpg";
 imageListC[7] = "images/watercolor/thumbs/artwork_8.jpg";
 imageListC[8] = "images/watercolor/thumbs/artwork_9.jpg";
 
+//water color art
+var imageListD = new Array();
+imageListD[0] = "images/photos/thumbs/photo_1.jpg";
+imageListD[1] = "images/photos/thumbs/photo_2.jpg";
+imageListD[2] = "images/photos/thumbs/photo_3.jpg";
+
 //create the build thumbnail function
 function buildThumbnails()
 {
@@ -80,6 +86,12 @@ function buildThumbnails()
   {
     //concatenation assignment
     output += '<img src="' + imageListC[k] + '" />';
+  }
+  
+   for(var l=0; l < imageListD.length; l++)//imageList.length can also be a number
+  {
+    //concatenation assignment
+    output += '<img src="' + imageListD[l] + '" />';
   }
   
 thumbsDiv.innerHTML = output;
